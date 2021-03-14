@@ -1,4 +1,4 @@
-<div *ngIf="dataLoaded==false" class="spinner-border text-info" role="status">
+<div *ngIf="dataLoaded==false" class="spinner-border text-primary" role="status">
     <span class="visually-hidden">Loading...</span>
 </div>
 <table *ngIf="dataLoaded==true" class="table">
@@ -7,9 +7,9 @@
             <th>UserId</th>
             <th>CompanyName</th>
         </tr>
+    </thead>
         <tr *ngFor="let customer of customers">
             <td>{{customer.UserId}}</td>
             <td>{{customer.CompanyName}}</td>
         </tr>
-    </thead>
 </table>
